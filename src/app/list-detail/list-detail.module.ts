@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
+import { BackButtonComponent } from '../back-button/back-button.component';
 import { ListDetailPage } from './list-detail.page';
 import { SharedModule } from '../shared.module';
 
@@ -23,6 +24,9 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     SharedModule
   ],
-  declarations: [ListDetailPage]
+  declarations: [
+    BackButtonComponent,
+    ListDetailPage
+  ]
 })
 export class ListDetailPageModule {}
