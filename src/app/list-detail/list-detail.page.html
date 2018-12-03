@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-title>Item {{itemNumber}}</ion-title>
-  <ion-title>Timestamp {{timeStamp}}</ion-title>
+  <div>Item {{itemNumber}}</div>
+  <div>Timestamp {{timeStamp}}</div>
   <app-list-core (itemClicked)="onItemClicked($event)"></app-list-core>
 </ion-content>
