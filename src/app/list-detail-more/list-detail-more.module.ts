@@ -5,13 +5,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ListDetailPage } from './list-detail.page';
+import { ListDetailMorePage } from './list-detail-more.page';
 import { SharedModule } from '../shared.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: ListDetailPage
+    component: ListDetailMorePage
   }
 ];
 
@@ -23,6 +23,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     SharedModule
   ],
-  declarations: [ListDetailPage]
+  declarations: [ListDetailMorePage]
 })
-export class ListDetailPageModule {}
+export class ListDetailMorePageModule {}

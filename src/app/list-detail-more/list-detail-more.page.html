@@ -3,16 +3,11 @@
     <ion-buttons slot="start">
       <!-- <ion-back-button></ion-back-button> -->
       <app-back-button></app-back-button>
-      <ion-button (click)="onListDetailMoreClicked()">
-        <ion-icon name="create"></ion-icon>
-      </ion-button>
     </ion-buttons>
-    <ion-title>List Detail Item {{itemNumber}}</ion-title>
+    <ion-title>List Detail More</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <div>Item {{itemNumber}}</div>
-  <div>Timestamp {{timeStamp}}</div>
   <app-list-core (itemClicked)="onItemClicked($event)"></app-list-core>
 </ion-content>

@@ -4,11 +4,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { NavParamsService } from '../nav-params.service';
 
 @Component({
-  selector: 'app-list-detail',
-  templateUrl: './list-detail.page.html',
-  styleUrls: ['./list-detail.page.scss'],
+  selector: 'app-list-detail-more',
+  templateUrl: './list-detail-more.page.html',
+  styleUrls: ['./list-detail-more.page.scss'],
 })
-export class ListDetailPage implements OnInit {
+export class ListDetailMorePage implements OnInit {
 
   public itemNumber: number;
   public timeStamp: string;
@@ -26,12 +26,6 @@ export class ListDetailPage implements OnInit {
 
       this.timeStamp = navParams.timeStamp;
     });
-  }
-
-  onListDetailMoreClicked() {
-    const navId = this.navParamsService.set(undefined);
-
-    this.router.navigate(['/list-detail-more'], { queryParams: { navId } });
   }
 
   onItemClicked(number: number) {
